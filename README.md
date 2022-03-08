@@ -1,1 +1,1 @@
-# l-a-2
+# lừa những người mình ghét
